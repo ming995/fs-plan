@@ -2,4 +2,4 @@
 
 * Backed ues Ruby on Rails
 
-* Frontend use JS/React
+* Frontend use   JS/React
