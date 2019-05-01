@@ -74,5 +74,76 @@ end
 
 ### 循环语句
 
+ruby的循环语句
+* times 方法
+* for 语句
+* while 语句
+* until 语句
+* each 方法
+* loop 方法
 
+> times 方法
 
+```ruby
+循环次数 .times do
+   希望循环的处理
+end
+````
+
+do ～ end 部分可以用｛～｝代替，如下所示。
+````ruby
+循环次数 .times {
+   希望循环的处理
+}
+````
+
+可以获取当前的循环次数
+````ruby
+5.times do |i|
+  puts " 第#{i} 次的循环。"
+end
+````
+
+> for 循环
+````ruby
+for 变量 in 开始时的数值 .. 结束时的数值 do
+   希望循环的处理
+end
+
+# 可以省略 do。
+````
+
+> while
+````ruby
+while 条件 do
+   希望循环的处理
+end
+
+# 可以省略 do
+````
+`until` 语句的判断条件和`while`语句判断条件相反
+
+> each
+
+````ruby
+names = ["JS","Perl","Python","Ruby"]
+names.each do |name|
+  puts name
+end
+
+# each 方法的结构如下。在说明 times 方法时我们曾提到过，块的 do ～ end 部分可换成 {～}。
+````
+
+> loop方法
+````ruby
+loop do
+  print "Ruby"
+end
+````
+`loop`方法没有终止的循环条件，会一直执行循环。在使用loop时候需要配合
+`break`跳出循环
+
+> 循环控制
+* break: 终止程序，跳出循环
+* next: 跳到下一次循环
+* redo: 在相同的条件下重复刚才的处理
